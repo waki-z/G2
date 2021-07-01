@@ -1,11 +1,11 @@
 import { Chart } from '@antv/g2';
 
 const data = [
-  { item: '事例一', count: 40, percent: 0.4 },
-  { item: '事例二', count: 21, percent: 0.21 },
-  { item: '事例三', count: 17, percent: 0.17 },
-  { item: '事例四', count: 13, percent: 0.13 },
-  { item: '事例五', count: 9, percent: 0.09 },
+  { item: '', count: 40, percent: 0.4 },
+  { item: '', count: 100, percent: 0.21 },
+  { item: '', count: 17, percent: 0.17 },
+  { item: '', count: 13, percent: 0.13 },
+  { item: '', count: 9, percent: 0.09 },
 ];
 const chart = new Chart({
   container: 'container',
@@ -33,10 +33,10 @@ chart
   .annotation()
   .text({
     position: ['50%', '50%'],
-    content: '主机',
+    content: '风控类型提币工单占比',
     style: {
-      fontSize: 14,
-      fill: '#8c8c8c',
+      fontSize: 16,
+      fill: '#666666',
       textAlign: 'center',
     },
     offsetY: -20,
